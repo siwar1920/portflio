@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <title>Projet Starbucks</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top " style="background-color: white;">
+    <div class="container my-2">
+      <a class="navbar-brand  " href="#">
+        <img src="images/logo.png" style="width:80px; height: 80px;">
+      </a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <input id="cbtn" type=checkbox>
+        <label for="cbtn" class="menu-btn">
+          <i class="fa  fa-bars fa-lg "></i>
+        </label>
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">
+              <p class="home">Accueil</p>
+            </a>
+          </li>
+          <li class="nav-item break1">
+            <hr>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <p>Menu</p>
+            </a>
+          </li>
+          <li class="nav-item break2">
+            <hr>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <p>Nouveautés</p>
+            </a>
+          </li>
+          <li class="nav-item break3">
+            <hr>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link">
+              <p>Contact</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5 firstContainer">
+    <div class="row g-4 ">
+      <div class="col-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5">
+        <div class="Text1">
+          <h2>It's not just Coffee</h2>
+        </div>
+        <div class="Text2">
+          <h1>It's<span>Starbucks</span></h1>
+          <p>
+            Starbucks est une chaîne de cafés américaine fondée en 1971. Starbucks vend des boissons
+            chaudes et froides, des pâtisseries et des collations, et des produits tels que des mugs et des machines à
+            café.
+          </p>
+        </div>
+        <div class="Button">
+          <a href="https://www.starbucks.com"><button>Site officiel</button></a>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-7 col-xl-7 col-xxl-7 imageClass">
+        <div class="img1 ">
+          <img src="images/img1.png" id="imagE">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="Secondcontainer ">
+        <div class="row ">
+          <div class="col-8 col-md-4 col-lg-3 col-xl-2 col-xxl-2 mx-auto d-flex    ImageThumb"
+            style="justify-content: center;align-items: center;">
+            <img src="images/thumb1.png" style="max-width: 64px;"
+              onclick="ImageChange('images/img1.png');ChangeBackground('#017143')">
+            <img src="images/thumb2.png" style="max-width: 64px;"
+              onclick="ImageChange('images/img2.png');ChangeBackground('#eb7495')">
+            <img src="images/thumb3.png" style="max-width: 64px;"
+              onclick="ImageChange('images/img3.png');ChangeBackground('#d752b1')">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="thirdContainer ">
+      
+      <div class="ins">
+        <a href="https://www.instagram.com/siwar_1920/?hl=fr">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+      </div>
+      <div class="tw">
+        <a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://fr.linkedin.com/in/siwar-najjar-426156329&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fsiwar-najjar-426156329%3Foriginal_referer%3Dhttps%253A%252F%252Fwww.google.com%252F">
+          <i class="fab fa-linkedin fa-lg"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="fourthContainer" id="fourthContain">
+    <!-- ROND VERT A DROITE L'ECRAN-->
+  </div>
+
+
+  <script>
+    var ImageRemover = document.getElementById('imagE')
+    var ColorChange = document.getElementById('fourthContain')
+
+    function ImageChange(anything) {
+      ImageRemover.src = anything;
+    }
+
+    function ChangeBackground(color) {
+      ColorChange.style.background = color;
+    }
+  </script>
+
+</body>
+
+</html>

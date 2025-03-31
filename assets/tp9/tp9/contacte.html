@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <form method="post" action="traitement.php" >
+        <title>Contacte</title>
+    </head>
+
+    <body>
+
+        <header>
+            <div class="image">
+                <img src="images/starts.png" alt="univers" width="1569px" height="100px">
+            </div>
+        </header>
+
+        <nav>
+            <ul>
+                <li class="navi"><a href="../elmahdi_tp8/tp8_elmahdi.html">A la une</a></li>
+                <li class="navi"><a href="">L'Actualité</a></li>
+                <li class="navi"><a href="">lien</a></li>
+                <li class="navi"><a href="">Astronomie</a></li>
+                <li class="navi"><a href="">Histoire</a></li>
+            </ul>
+        </nav> 
+        <fieldset id="coordonnees">
+                <fieldset >
+                    <legend >Cordonnées</legend>
+
+                    <p>Civilité: 
+                        <input type="radio" name="rep" value="M." id="M"/> <label for ="M.">M.</label>
+                        <input type="radio" name="rep" value="Mlle" id="Mlle"/> <label for ="MLLE">Mlle</label>
+                        <input type="radio" name="rep" value="M." id="M"/> <label for ="M.">Autre</label></br>
+                    </p>
+                    
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom"/> </br></br>
+                    <label for="nom">Prénom :</label>
+                    <input type="text" name="nom" id="nom"/> </br></br>
+                    <label for="adresse">Adresse :</label>
+                    <textarea name="adresse" id="adresse"></textarea></br></br>
+                    
+                    <label for="Code postal">Code postal :</label>
+                    <input name="codepostal" id="codepostal"></br></br>
+
+                    <label for="ville">Ville :</label>
+                    <input name="ville" id="ville"></br></br>
+
+                    <label for="mail"> Adresse email :</label>
+                    <input type="Email" name="mail" id="mail" /></br></br>
+                
+                    <label for="pays"> Pays :</label>
+                    <input type="pays" name="pays" id="pays"/>
+
+                    <form method="post" action="traitement.php">
+                        <p>Centre d'intéret : :<br />
+                        <input type="checkbox" name="Astronomie" id="Astronomie" /> <label for="Astronomie" >Astronomie</label><br/>
+                        <input type="checkbox" name="Cinema" id="Cinema" /> <label for="Cinema">Cinema</label><br />
+                        <input type="checkbox" name="Internet" id="Internet"/> <label for="Internet">Internet</label><br />
+                        <input type="checkbox" name="Voyage" id="Voyage" /> <label for="Voyage">Voyage</label>
+                        </p>
+                    </form>   
+                </fieldset> 
+                <fieldset>
+                    <legend >Message :</legend>
+                    <input type="message" name="message" id="message"/> </br>
+                    <div id="boutonEnvoi">
+                        <a href="traitement.php.txt">
+                            <input type="submit" value="Envoyer" />
+                        </a>
+                    </div>
+                </fieldset>
+        </fieldset>
+    </body>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="navi"><a href="../elmahdi_tp8/tp8_elmahdi.html">A la une</a></li>
+                <li class="navi"><a href="">Nous contacter</a></li>
+                <li class="navi"><a href="">Recutement</a></li>
+                <li class="navi"><a href="">Condition</a></li>
+            </ul>
+        </nav>
+    </footer>
+</html>
